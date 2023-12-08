@@ -10,11 +10,13 @@
             color: green;
             font-family: 'Courier New', monospace;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
             margin: 0;
+            padding: 0;
+            height: 100vh; /* 100% viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
         }
 
         h1 {
@@ -50,8 +52,8 @@
             border: 2px solid #0f0;
             border-radius: 10px;
             overflow: auto;
-            max-width: 800px;
-            width: 80%;
+            max-width: 800px; /* Set a maximum width */
+            width: 80%; /* Set a relative width for responsiveness */
         }
 
         pre {

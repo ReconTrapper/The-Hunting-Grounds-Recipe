@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +17,23 @@
         h1 {
             text-align: center;
             text-shadow: 2px 2px 4px #006400; /* Forest Green shadow */
+            position: relative;
+        }
+
+        .spin-wolf {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: spin 4s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         pre {
@@ -43,15 +59,15 @@
             line-height: 2;
             text-align: center;
         }
-
-        .bug-emoji {
-            font-size: 50%;
-        }
     </style>
 </head>
 <body>
 
-<h1>YOU FOUND THIS! GOOD JOB GO HACK INTO SOMETHING AND MAKE THE WORLD A BETTER PLACE WHEN YOUR THERE</h1>
+<h1>
+    <span class="spin-wolf">🐺</span>
+    YOU FOUND THIS! GOOD JOB GO HACK INTO SOMETHING AND MAKE THE WORLD A BETTER PLACE WHEN YOU'RE THERE
+    <span class="spin-wolf">🐺</span>
+</h1>
 
 <pre>
 # Bug Bounty Hunting Grounds: A Beginner's Adventure

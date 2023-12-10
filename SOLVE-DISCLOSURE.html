@@ -65,21 +65,12 @@
             z-index: 1; /* Ensure text is on top of bug emojis */
         }
 
-        /* Styles for spinning and bouncing bugs */
+        /* Styles for bouncing bugs */
         .bug-emoji {
-            font-size: 2400%; /* 100 times bigger */
+            font-size: 50px; /* Set a reasonable size */
             position: absolute;
-            animation: spin 4s linear infinite, bounce 2s ease-in-out infinite;
+            animation: bounce 2s ease-in-out infinite;
             z-index: 0; /* Ensure bug emojis are behind text */
-        }
-
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
         }
 
         @keyframes bounce {
@@ -87,10 +78,10 @@
                 transform: translateY(0);
             }
             40% {
-                transform: translateY(-200px);
+                transform: translateY(-20px);
             }
             60% {
-                transform: translateY(-100px);
+                transform: translateY(-10px);
             }
         }
     </style>
@@ -101,28 +92,13 @@
     YOU FOUND THIS! GOOD JOB GO HACK INTO SOMETHING AND MAKE THE WORLD A BETTER PLACE WHEN YOU'RE THERE
 </h1>
 
-<!-- Spinning and bouncing bug emojis outside the text fields -->
-<div class="bug-emoji" style="top: -20%; left: -20%;">🪲️</div>
-<div class="bug-emoji" style="top: 150%; left: 150%;">🪲️</div>
-<div class="bug-emoji" style="top: 120%; left: -10%;">🪲️</div>
+<!-- Bouncing bug emojis outside the text fields -->
+<div class="bug-emoji" style="top: -10%; left: 5%;">🪲️</div>
+<div class="bug-emoji" style="top: 120%; left: 10%;">🪲️</div>
 
 <div class="section">
     <!-- Your content goes here -->
 </div>
-
-<script>
-    // JavaScript to create additional bug emojis and set random positions
-    const numBugs = 10;
-
-    for (let i = 0; i < numBugs; i++) {
-        const bug = document.createElement('div');
-        bug.classList.add('bug-emoji');
-        bug.innerHTML = '🪲️';
-        bug.style.top = `${Math.random() * 100}vh`;
-        bug.style.left = `${Math.random() * 100}vw`;
-        document.body.appendChild(bug);
-    }
-</script>
 
 </body>
 </html>

@@ -31,6 +31,7 @@
             margin-bottom: 20px;
             max-width: 800px; /* Set a maximum width for the title */
             width: 80%; /* Set a relative width for responsiveness */
+            z-index: 1; /* Ensure text is on top of bug emojis */
         }
 
         .section {
@@ -43,6 +44,7 @@
             max-width: 800px; /* Set a maximum width for the sections */
             width: 80%; /* Set a relative width for responsiveness */
             position: relative;
+            z-index: 1; /* Ensure text is on top of bug emojis */
         }
 
         pre {
@@ -60,13 +62,15 @@
             margin-top: 30px;
             line-height: 2;
             text-align: center;
+            z-index: 1; /* Ensure text is on top of bug emojis */
         }
 
         /* Styles for spinning and bouncing bugs */
         .bug-emoji {
-            font-size: 24px;
+            font-size: 2400%; /* 100 times bigger */
             position: absolute;
             animation: spin 4s linear infinite, bounce 2s ease-in-out infinite;
+            z-index: 0; /* Ensure bug emojis are behind text */
         }
 
         @keyframes spin {
@@ -83,10 +87,10 @@
                 transform: translateY(0);
             }
             40% {
-                transform: translateY(-20px);
+                transform: translateY(-200px);
             }
             60% {
-                transform: translateY(-10px);
+                transform: translateY(-100px);
             }
         }
     </style>
@@ -97,10 +101,10 @@
     YOU FOUND THIS! GOOD JOB GO HACK INTO SOMETHING AND MAKE THE WORLD A BETTER PLACE WHEN YOU'RE THERE
 </h1>
 
-<!-- Spinning and bouncing bug emojis -->
-<div class="bug-emoji" style="top: 20%; left: 20%;">🪲️</div>
-<div class="bug-emoji" style="top: 50%; left: 50%;">🪲️</div>
-<div class="bug-emoji" style="top: 80%; left: 80%;">🪲️</div>
+<!-- Spinning and bouncing bug emojis outside the text fields -->
+<div class="bug-emoji" style="top: -20%; left: -20%;">🪲️</div>
+<div class="bug-emoji" style="top: 150%; left: 150%;">🪲️</div>
+<div class="bug-emoji" style="top: 120%; left: -10%;">🪲️</div>
 
 <div class="section">
     <!-- Your content goes here -->

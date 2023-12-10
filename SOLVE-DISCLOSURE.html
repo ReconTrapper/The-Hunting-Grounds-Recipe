@@ -9,38 +9,40 @@
         body {
             background-color: #000;
             color: #0f0;
-            text-align: center;
+            text-align: left;
             margin: 50px auto;
             max-width: 1000px;
             font-family: 'Impact', sans-serif;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 20px;
+            grid-column-gap: 20px;
         }
 
         h1 {
             font-size: 30px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             grid-column: span 4;
         }
 
         hr {
             border: none;
-            margin: 20px 0;
+            margin: 30px 0;
             border-bottom: 2px solid #0f0;
             grid-column: span 4;
         }
 
         p {
             margin-top: 10px;
-            line-height: 1.6;
-            text-align: left;
-            max-width: 100%;
+            line-height: 1.8;
+            max-width: 90%;
+            width: 90%;
             white-space: pre-wrap;
-            font-size: 1vw;
+            font-size: 1.2vw;
             border: 1px solid #0f0;
             padding: 10px;
+            margin: 10px auto;
             border-radius: 5px;
+            grid-column: span 1;
         }
 
         u {
@@ -54,8 +56,7 @@
         }
 
         .you-also-need {
-            text-align: left;
-            margin-left: 10px;
+            margin-left: 30px;
         }
 
         /* Added style for the bug emoji in the link */
@@ -64,12 +65,9 @@
         }
     </style>
 </head>
-
 <body>
     <h1>🕵️‍♂️ THE HUNTING GROUNDS RECIPE 🎯</h1>
-
-    <hr>
-
+    
     <p>
         <u>Bug Bounty Hunting Grounds: A Beginner's Adventure</u>
     </p>
@@ -88,8 +86,6 @@
         <u>Mission:</u>
         To guide newcomers in initiating a free bug bounty journey, fostering discovery and overall skill development.
     </p>
-
-    <hr>
 
     <p>
         <u>The Catch:</u>
@@ -113,8 +109,6 @@
         - A reminder that a VPN won't make you immune to ethical responsibilities.
     </p>
 
-    <hr>
-
     <p>
         <u>Second Section:</u>
         - General references to tools and symbols, encouraging new bug hunters to explore command line arguments.
@@ -128,8 +122,6 @@
         - Red Hat challenge: Maintain ethical behavior, resisting the urge to go pro for free.
         - Employ Kali Linux via VmWare, navigating through challenges and ethical choices.
     </p>
-
-    <hr>
 
     <p>
         <u>Last Section:</u>
@@ -145,10 +137,9 @@
 
     <p>
         The journey begins here. May your hunting grounds be fruitful, and your discoveries ethical.
+        <!-- Added class to the bug emoji link for styling -->
+        Watch out for bugs in the recipe. <a href="HINTS.html" class="bug-link-emoji">🪲️</a>
     </p>
-
-    <!-- Added class to the bug emoji link for styling -->
-    Watch out for bugs in the recipe. <a href="HINTS.html" class="bug-link-emoji">🪲️</a>
 </body>
 
 </html>

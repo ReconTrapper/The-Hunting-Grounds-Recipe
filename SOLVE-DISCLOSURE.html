@@ -20,6 +20,7 @@
             justify-content: flex-start;
             align-items: center;
             position: relative;
+            overflow: hidden; /* Hide overflow to prevent scrolling */
         }
 
         h1 {
@@ -60,6 +61,34 @@
             line-height: 2;
             text-align: center;
         }
+
+        /* Styles for spinning and bouncing bugs */
+        .bug-emoji {
+            font-size: 24px;
+            position: absolute;
+            animation: spin 4s linear infinite, bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
     </style>
 </head>
 <body>
@@ -68,69 +97,28 @@
     YOU FOUND THIS! GOOD JOB GO HACK INTO SOMETHING AND MAKE THE WORLD A BETTER PLACE WHEN YOU'RE THERE
 </h1>
 
+<!-- Spinning and bouncing bug emojis -->
+<div class="bug-emoji" style="top: 20%; left: 20%;">🪲️</div>
+<div class="bug-emoji" style="top: 50%; left: 50%;">🪲️</div>
+<div class="bug-emoji" style="top: 80%; left: 80%;">🪲️</div>
+
 <div class="section">
-    <pre>
-# Bug Bounty Hunting Grounds: A Beginner's Adventure
-
-## Disclaimer:
-
-This endeavor is purely for educational purposes, with no intent to harm or manipulate. For over 35 years, I struggled to learn languages due to dyslexia. While I've acquired information freely, the recipe for bug hunting is uniquely mine – the "Trapper, the Bug Bounty Pirate... with good intentions.". Since everything is or can be free on the internet it comes down to who owns it or who knows about it. People only hurt if you take not give.
-    </pre>
-    
-    <pre>
-## Caution:
-
-Anyone engaging in harmful activities does so at their discretion. I lack the means to intervene, but the project's purpose is to channel such energy constructively.
-    </pre>
-
-    <pre>
-## Mission:
-
-To guide newcomers in initiating a free bug bounty journey, fostering discovery and overall skill development.
-
-### The Catch:
-
-I've devised the first puzzle for budding bug hunters – a deceptive recipe that conceals its true nature.
-
-### Answer to the Puzzle – The Hunting Grounds Recipe:
-
-#### First Section:
-
-1. Google and install BiglyBT.
-   - First bug: A gaming reference leading to FitGirl, a site dedicated to cracked games.
-     - New bug hunters should attempt modding a compatible game as their first project.
-     - Be prepared to encounter malware, realizing the key lies in bypassing antivirus.
-
-- **New Bug Hunters VPN Statement:**
-  - A reminder that a VPN won't make you immune to ethical responsibilities.
-
-#### Second Section:
-
-- General references to tools and symbols, encouraging new bug hunters to explore command line arguments.
-    </pre>
-
-    <pre>
-- **You Also Need:**
-  - Windows laptop
-  - Install BiglyBT
-  - Use VmWare, revealing the second bug with a warning against a particular action.
-    - Red Hat challenge: Maintain ethical behavior, resisting the urge to go pro for free.
-  - Employ Kali Linux via VmWare, navigating through challenges and ethical choices.
-    </pre>
-
-    <pre>
-#### Last Section:
-
-- Introduction to Project Directories + Features.
-  - Future space for displaying success in solving challenges.
-
-- **The Last Bug:**
-  - Beware of Bug Number 5, defining one's capability to hunt.
-    - This bug is 10% larger than the rest, signaling proficiency.
-
-The journey begins here. May your hunting grounds be fruitful, and your discoveries ethical.
-    </pre>
+    <!-- Your content goes here -->
 </div>
+
+<script>
+    // JavaScript to create additional bug emojis and set random positions
+    const numBugs = 10;
+
+    for (let i = 0; i < numBugs; i++) {
+        const bug = document.createElement('div');
+        bug.classList.add('bug-emoji');
+        bug.innerHTML = '🪲️';
+        bug.style.top = `${Math.random() * 100}vh`;
+        bug.style.left = `${Math.random() * 100}vw`;
+        document.body.appendChild(bug);
+    }
+</script>
 
 </body>
 </html>

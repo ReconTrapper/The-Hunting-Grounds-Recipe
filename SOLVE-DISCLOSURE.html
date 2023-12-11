@@ -31,7 +31,7 @@
 
         section {
             text-align: center; /* Centered the text */
-            margin-top: 20px;
+            margin-top: 50px; /* Adjusted margin-top for the first section */
             max-width: 100%; /* Adjusted max-width to 100% */
             white-space: pre-wrap;
             border: 2px solid #0f0; /* Adjusted border thickness */
@@ -39,6 +39,15 @@
             margin: 10px auto;
             border-radius: 5px;
             display: inline-block; /* Centered the section */
+        }
+
+        /* Additional sections can have different margin-top values */
+        section:nth-child(2) {
+            margin-top: 100px; /* Adjusted margin-top for the second section */
+        }
+
+        section:nth-child(3) {
+            margin-top: 150px; /* Adjusted margin-top for the third section */
         }
 
         u {
@@ -55,6 +64,7 @@
             text-align: center; /* Centered the text */
             margin: 0 auto; /* Centered this section */
             display: inline-block; /* Centered the section */
+            margin-top: 200px; /* Adjusted margin-top for the last section */
         }
 
         /* Added style for the bug emoji in the link */

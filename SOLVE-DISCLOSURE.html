@@ -38,11 +38,7 @@
             margin: 10px auto;
             border-radius: 5px;
             display: inline-block; /* Centered the section */
-        }
-
-        section:nth-child(1),
-        section:nth-child(2) {
-            width: 48%; /* Adjusted width for the first two sections to fit side by side */
+            width: 100%; /* Adjusted width to 100% for full width */
         }
 
         u {
@@ -55,7 +51,7 @@
             margin-bottom: 10px;
         }
 
-        .you-also-need {
+        .disclaimer {
             text-align: center; /* Centered the text */
             margin: 10px auto; /* Centered the section with some margin */
             padding: 15px; /* Adjusted padding */
@@ -65,9 +61,12 @@
             width: 100%; /* Adjusted width to 100% for full width */
         }
 
-        .disclaimer {
+        .you-also-need {
             text-align: center; /* Centered the text */
-            margin: 0 auto; /* Centered these sections */
+            margin: 10px auto; /* Centered the section with some margin */
+            padding: 15px; /* Adjusted padding */
+            border: 2px solid #0f0; /* Adjusted border thickness */
+            border-radius: 5px; /* Added border radius */
             display: inline-block; /* Centered the section */
             width: 100%; /* Adjusted width to 100% for full width */
         }
@@ -88,6 +87,8 @@
         hunting is uniquely mine – the "Trapper, the Bug Bounty Pirate... with good intentions.". Since everything is or
         can be free on the internet it comes down to who owns it or who knows about it. People only hurt if you take not
         give.
+    </section>
+    <section>
         <u>Caution:</u> Anyone engaging in harmful activities does so at their discretion. I lack the means to intervene,
         but the project's purpose is to channel such energy constructively.
         <u>Mission:</u> To guide newcomers in initiating a free bug bounty journey, fostering discovery and overall skill
@@ -106,6 +107,12 @@
         - General references to tools and symbols, encouraging new bug hunters to explore command line arguments.
         - Introduction to Project Directories + Features.
         - Future space for displaying success in solving challenges.
+        <u>The Last Bug:</u>
+        - Beware of Bug Number 5, defining one's capability to hunt.
+        - This bug is 10% larger than the rest, signaling proficiency. The journey begins here. May your hunting grounds be
+        fruitful, and your discoveries ethical.
+        <!-- Added class to the bug emoji link for styling -->
+        Watch out for bugs in the recipe. <a href="HINTS.html" class="bug-link-emoji">🪲️</a>
     </section>
     <section class="you-also-need">
         <u>You Also Need:</u>
@@ -114,14 +121,6 @@
         - Use VmWare, revealing the second bug with a warning against a particular action.
         - Red Hat challenge: Maintain ethical behavior, resisting the urge to go pro for free.
         - Employ Kali Linux via VmWare, navigating through challenges and ethical choices.
-    </section>
-    <section class="disclaimer">
-        <u>The Last Bug:</u>
-        - Beware of Bug Number 5, defining one's capability to hunt.
-        - This bug is 10% larger than the rest, signaling proficiency. The journey begins here. May your hunting grounds be
-        fruitful, and your discoveries ethical.
-        <!-- Added class to the bug emoji link for styling -->
-        Watch out for bugs in the recipe. <a href="HINTS.html" class="bug-link-emoji">🪲️</a>
     </section>
 </body>
 

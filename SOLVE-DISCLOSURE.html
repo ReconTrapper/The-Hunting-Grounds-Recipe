@@ -31,7 +31,6 @@
 
         section {
             text-align: center; /* Centered the text */
-            margin-top: 50px; /* Adjusted margin-top for the first section */
             max-width: 100%; /* Adjusted max-width to 100% */
             white-space: pre-wrap;
             border: 2px solid #0f0; /* Adjusted border thickness */
@@ -41,13 +40,9 @@
             display: inline-block; /* Centered the section */
         }
 
-        /* Additional sections can have different margin-top values */
+        section:nth-child(1),
         section:nth-child(2) {
-            margin-top: 100px; /* Adjusted margin-top for the second section */
-        }
-
-        section:nth-child(3) {
-            margin-top: 150px; /* Adjusted margin-top for the third section */
+            width: 48%; /* Adjusted width for the first two sections to fit side by side */
         }
 
         u {
@@ -62,9 +57,16 @@
 
         .you-also-need {
             text-align: center; /* Centered the text */
+            margin: 0 auto; /* Centered these sections */
+            display: inline-block; /* Centered the section */
+            width: 100%; /* Adjusted width to 100% for full width */
+        }
+
+        .disclaimer {
+            text-align: center; /* Centered the text */
             margin: 0 auto; /* Centered this section */
             display: inline-block; /* Centered the section */
-            margin-top: 200px; /* Adjusted margin-top for the last section */
+            width: 100%; /* Adjusted width to 100% for full width */
         }
 
         /* Added style for the bug emoji in the link */
@@ -77,7 +79,6 @@
 <body>
     <h1>🕵️‍♂️ THE HUNTING GROUNDS RECIPE 🎯</h1>
 
-    <u>Bug Bounty Hunting Grounds: A Beginner's Adventure</u>
     <section>
         <u>Disclaimer:</u> This endeavor is purely for educational purposes, with no intent to harm or manipulate. For over
         35 years, I struggled to learn languages due to dyslexia. While I've acquired information freely, the recipe for bug
@@ -114,6 +115,8 @@
         - Use VmWare, revealing the second bug with a warning against a particular action.
         - Red Hat challenge: Maintain ethical behavior, resisting the urge to go pro for free.
         - Employ Kali Linux via VmWare, navigating through challenges and ethical choices.
+    </section>
+    <section class="disclaimer">
         <u>The Last Bug:</u>
         - Beware of Bug Number 5, defining one's capability to hunt.
         - This bug is 10% larger than the rest, signaling proficiency. The journey begins here. May your hunting grounds be
